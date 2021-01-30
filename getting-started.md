@@ -1,14 +1,11 @@
-# **Mongodb with mongoose**
+# **Making new __discord bot__**
 
-## Achnahowa mongoose 🌐
-mongoose howa lpackage lighadi tkhdm bih bach tconnecta m3a mongodb, takhod data, tsayft data...
+# **1:**
+1.1/ ghadi tmchi l Google w ghadi da5al 'node.js'
+# 1/ ghadi t3ml new folder f desktop smih li bghiti
 
-[Docs](https://mongoosejs.com/docs)
 
-## Usage⚡
 
-### Installation
-- flbdya ghadi tinstalli `mongoose`
 
 ```js
 npm i mongoose
