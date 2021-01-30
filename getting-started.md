@@ -14,25 +14,28 @@
 
 
 ```js
-npm i mongoose
-```
+const Discord = require('discord.js');
 
-- mn ba3d ghadi trequiri `mongoose` flfile dyalk
+const client = new Discord.Client();
 
-```js
-const mongoose = require("mongoose");
-```
-- db ghadi ntconnectaw ldatabase bmongoose
+client.on('ready', () => {
 
-```js
-mongoose.connect("mongodb://localhost:port/database_name", { // andiro localhost ka example
-// flcodedya;l ghadi tbdl "localhost:port/database_name" blink dyal database lighadi tkhdm biha
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: true
+  console.log(`Logged in as ${client.user.tag}!`);
+
 });
+
+client.on('message', msg => {
+
+  if (msg.content === 'ping') {
+
+    msg.reply('Pong!');
+
+  }
+
+});
+
+client.login('token');
 ```
+1.3/ mli ghadi t7ot had chi ghadi tm3l save 
+1.4/ ghadi trja3 l powershell w ghadi tktb 'npm i discord.js'
 
-db nta installiti mongoose, otconnectiti ldatabase!
-
-[Next Page](schemas.md)
